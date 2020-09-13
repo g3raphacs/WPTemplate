@@ -21,7 +21,13 @@
             </div>
           <?php
           endwhile; ?>
-        </div>
+
+</div>
+
+<!-- pagination  -->
+<?php lejee_pagination() ?>
+
+
     <?php else: ?>
         <h1>pas d'article</h1>
 
