@@ -6,7 +6,7 @@
               the_post(); ?>
             <div class="col-sm-4">
               <div class="card" style="width: 18rem;">
-                <?php the_post_thumbnail('medium', [
+                <?php the_post_thumbnail('card-header', [
                     'class' => 'card-img-top',
                     'alt' => '',
                     'style' => 'height: auto;',

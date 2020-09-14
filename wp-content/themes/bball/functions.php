@@ -35,6 +35,8 @@ function lejee_register_styles()
 
 // HOOKS----------------------------------------------------------------------------------
 // THEME SUPPORTS
+//add image size
+add_image_size('card-header', 350, 215, true);
 //activate title tag
 function lejee_title_tag()
 {
@@ -88,7 +90,7 @@ function lejee_menu_link_class($attrs){
 add_filter('nav_menu_css_class', 'lejee_menu_class');
 add_filter('nav_menu_link_attributes', 'lejee_menu_link_class');
 
-//pagination
+//pagination--------------------------------------------------------------
 function lejee_pagination(){
     $pages = paginate_links(['type'=>'array']);
     if($pages === null){return;}
