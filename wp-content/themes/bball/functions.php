@@ -36,7 +36,7 @@ function lejee_register_styles()
 // HOOKS----------------------------------------------------------------------------------
 // THEME SUPPORTS
 //add image size
-add_image_size('card-header', 350, 215, true);
+add_image_size('card_thumbnail', 350,215,true);
 //activate title tag
 function lejee_title_tag()
 {
@@ -60,6 +60,10 @@ add_action('after_setup_theme', 'lejee_post_thumbnails');
 
 //load scripts and styles
 add_action('wp_enqueue_scripts', 'lejee_register_styles');
+
+//metaboxes
+require_once('metaboxes/sponso.php');
+SponsoMetaBox::register();
 
 // FILTERS--------------------------------------------------------------------------------
 // Delete description in title
