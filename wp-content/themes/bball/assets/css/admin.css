@@ -1,0 +1,17 @@
+.manage-column.column-thumbnail{
+    width: 150px;
+}
+body{
+    background-color: rgb(179, 211, 237);
+    /* color: white; */
+}
+
+.column-sponso .bullet{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: lightseagreen;
+}
+.column-sponso .bullet-no{
+    background-color: rgb(228, 80, 0);
+}

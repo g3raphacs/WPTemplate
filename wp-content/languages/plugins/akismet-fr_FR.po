@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-Spam - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-06-06 12:29:04+0000\n"
+"PO-Revision-Date: 2020-09-15 17:01:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,7 +35,7 @@ msgstr "Le commentaire a été attrapé par %s."
 
 #: class.akismet.php:552
 msgid "Akismet is not configured. Please enter an API key."
-msgstr "Akismet n'est pas configuré. Veuillez saisir votre clé API."
+msgstr "Akismet n’est pas configuré. Veuillez saisir votre clé API."
 
 #: views/enter.php:8
 msgid "Enter your API key"
@@ -71,7 +71,7 @@ msgstr "Clé API nécessaire pour la récupération de statistiques."
 
 #: views/config.php:162
 msgid "To help your site with transparency under privacy laws like the GDPR, Akismet can display a notice to your users under your comment forms. This feature is disabled by default, however, you can turn it on above."
-msgstr "Pour aider votre site à être plus transparent à l'égard des lois sur la confidentialité comme le RGPD, Akismet permet d'afficher un message sous les formulaires de commentaire à l'attention de vos utilisateurs. Cette fonctionnalité est désactivée par défaut, cependant, vous pouvez l'activer au-dessus."
+msgstr "Pour aider votre site à être plus transparent à l’égard des lois sur la confidentialité comme la RGPD, Akismet permet d’afficher un message sous les formulaires de commentaire à l’attention de vos utilisateurs. Cette fonctionnalité est désactivée par défaut, cependant, vous pouvez l’activer au-dessus."
 
 #: views/config.php:160
 msgid "Do not display privacy notice."
