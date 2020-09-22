@@ -1,0 +1,29 @@
+//COLOR List
+$colors:(
+    'main':        #ff6600,
+    'sec':         #231f20,
+    'sec-light':   #5a5a5a,
+    'sec-xlight':  #aaaaaa,
+    'black':       #000000,
+    'white':       #ffffff,
+
+);
+
+@each $name,$value in $colors{
+
+    //text color extension
+    %txt-#{$name}{color: $value;}
+
+    //text color class
+    .txt-#{$name}{
+        color: $value;
+    }
+
+    //background color extension
+    %bck-#{$name}{background-color: $value;}
+
+    //background color class
+    .bck-#{$name}{
+        background-color: $value;
+    }
+}

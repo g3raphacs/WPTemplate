@@ -1,0 +1,16 @@
+// Basic Resets____________________________________________________
+.m0       {margin: 0px; }
+.m0child *{margin: 0px; }
+.p0       {padding: 0px;}
+.mp0      {margin: 0px; padding: 0px;}
+.b0       {border: none;}
+
+// Containers____________________________________________________
+.container{max-width: 1170px; margin: 0 auto;}
+
+// FLex____________________________________________________
+.flex           {   display: flex;                                  }
+.flex-col       {   display: flex; flex-direction: column;          }
+.flex-wrap      {   flex-wrap: wrap;                                }
+.flex-spaceb    {   display: flex; justify-content: space-between;  }
+.flex-align     {   align-items: center;                            }

@@ -1,0 +1,22 @@
+// INITIALIZE____________________________________________
+body{
+    font-size: 0.875rem;
+    font-family: $font-main;
+    font-weight: 400;
+    @extend %txt-main-light;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+// border-box all
+body *{box-sizing: border-box;}
+// reset links style
+a{text-decoration: none; @extend %txt-main-light;}
+// hide lists bullets
+li{list-style: none;}
+// reset lists padding
+ul,menu{padding-left: 0px;}
+//reset select style
+select{-webkit-appearance : none; -moz-appearance : none; background : none; border: none;}
+//reset button style
+button{border: none; background: none;}

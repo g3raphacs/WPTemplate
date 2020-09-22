@@ -1,7 +1,18 @@
-.customize-support {
-  background-color: black;
-  padding: 0px;
-  margin: 0px;
-}
+/* Error: The target selector was not found.
+ * Use "@extend %txt-main-light !optional" to avoid this error.
+ *   ,
+ * 6 |     @extend %txt-main-light;
+ *   |     ^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   wp-content\themes\swishhh\assets\style\modules\_resets.scss 6:5  root stylesheet */
 
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend %txt-main-light !optional" to avoid this error.\a   \2577 \a 6 \2502      @extend %txt-main-light;\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   wp-content\\themes\\swishhh\\assets\\style\\modules\\_resets.scss 6:5  root stylesheet';
+}

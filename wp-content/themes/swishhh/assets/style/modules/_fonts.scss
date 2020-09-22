@@ -1,0 +1,23 @@
+// FONTS Variables________________________________________________
+$font-main: 'Roboto', sans-serif;
+$font-sec: 'Oswald', sans-serif;
+
+// FONTS Size____________________________________________________
+$font-sizes: 11 12 13 14 15 16 17 18 20 21 22 24 27 30 38 42 57;
+@each $size in $font-sizes{
+    .f-#{$size}{
+        $size: $size/16;
+        font-size: #{$size}rem;
+    }
+}
+
+// FONT Weights_____________
+.f-regular {    font-weight: 400;   }
+.f-bold    {    font-weight: 700;   }
+.f-black   {    font-weight: 900;   }
+
+// Align_________________
+.txt-left       {   text-align     : left;      }
+.txt-right      {   text-align     : right;     }
+.txt-center     {   text-align     : center;    }
+.txt-justify    {   text-align     : justify;   }
