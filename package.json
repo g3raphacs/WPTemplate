@@ -1,0 +1,9 @@
+{
+  "name": "swishhh",
+  "version": "1.0.0",
+  "description": "swishhh",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch wp-content/themes/swishhh/assets/style/main.scss:wp-content/themes/swishhh/assets/css/main.css"
+  }
+}

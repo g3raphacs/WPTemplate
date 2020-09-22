@@ -11,7 +11,7 @@ class SponsoMetaBox {
 
     public static function add($postType, $post){
         if ($postType === 'post' && current_user_can('publish_posts',$post)){
-            add_meta_box(self::META_KEY, 'Sponsoring', [self::class, 'render'], 'post', 'side');
+            add_meta_box(self::META_KEY, 'Article mis en avant', [self::class, 'render'], 'post', 'side');
         }
     }
 
@@ -20,7 +20,7 @@ class SponsoMetaBox {
         ?>
         <input type="hidden" value="0" name="<?php self::META_KEY?>">
         <input type="checkbox" value="1" name="<?php self::META_KEY?>" <?php checked($value, '1')?>>
-        <label for="lejeesponso">Cet article est sponsorisé ?</label>
+        <label for="lejeesponso">Article à la une ?</label>
         <?php
     }
 
