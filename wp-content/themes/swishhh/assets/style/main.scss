@@ -1,9 +1,6 @@
+@import 'modules/_colors';
 @import 'modules/_fonts';
 @import 'modules/_resets';
-@import 'modules/_colors';
+@import 'modules/_boxmodel.scss';
+@import 'modules/_header.scss';
 
-body{
-    background-color: black;
-    padding: 0px;
-    margin: 0px;
-}

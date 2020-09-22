@@ -8,6 +8,10 @@ function lejee_register_styles()
         'https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap'
     );
     wp_register_style(
+        'lineawesome',
+        'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css'
+    );
+    wp_register_style(
         'main_css',
         '/wp-content/themes/swishhh/assets/css/main.css'
     );
@@ -19,6 +23,7 @@ function lejee_register_styles()
         true
     );
     wp_enqueue_style('fonts');
+    wp_enqueue_style('lineawesome');
     wp_enqueue_style('main_css');
     wp_enqueue_script('main_js');
 }

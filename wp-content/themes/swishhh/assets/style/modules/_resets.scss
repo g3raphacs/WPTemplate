@@ -1,9 +1,9 @@
 // INITIALIZE____________________________________________
 body{
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-family: $font-main;
     font-weight: 400;
-    @extend %txt-main-light;
+    @extend %txt-sec;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -11,7 +11,7 @@ body{
 // border-box all
 body *{box-sizing: border-box;}
 // reset links style
-a{text-decoration: none; @extend %txt-main-light;}
+a{text-decoration: none; @extend %txt-sec;}
 // hide lists bullets
 li{list-style: none;}
 // reset lists padding

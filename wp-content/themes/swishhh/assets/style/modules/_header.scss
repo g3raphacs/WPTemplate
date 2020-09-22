@@ -1,0 +1,91 @@
+#navbar-topbar{
+    max-height:45px;
+    #navbar-left{
+        align-items: center;
+        flex:0,70%;
+        #navbar-social{
+            & div{
+                padding-right: 15px;
+                & a img{
+                    &:nth-child(1){
+                        display:block;
+                    }
+                    &:nth-child(2){
+                        display:none;
+                    }
+                }
+                &:hover{
+                    & a img{
+                        &:nth-child(1){
+                            display:none;
+                        }
+                        &:nth-child(2){
+                            display:block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #navbar-right{
+        align-items: center;
+        #search-icon{
+            padding: 10px;
+            &:hover{
+                @extend %txt-main;
+            }
+        }
+        #nav-burger{
+            &.closed{
+                & #nav-burger-closed{
+                    display:block;
+                }
+                & #nav-burger-opened{
+                    display:none;
+                }
+            }
+            &.opened{
+                & #nav-burger-closed{
+                    display:none;
+                }
+                & #nav-burger-opened{
+                    display:block;
+                }
+            }
+            & #nav-burger-closed{
+                & img:nth-child(1){
+                    display:block;
+                }
+                & img:nth-child(2){
+                    display:none;
+                }
+            }
+            & #nav-burger-opened{
+                & img:nth-child(1){
+                    display:block;
+                }
+                & img:nth-child(2){
+                    display:none;
+                }
+            }
+            &:hover{
+                & #nav-burger-closed{
+                    & img:nth-child(1){
+                        display:none;
+                    }
+                    & img:nth-child(2){
+                        display:block;
+                    }
+                }
+                & #nav-burger-opened{
+                    & img:nth-child(1){
+                        display:none;
+                    }
+                    & img:nth-child(2){
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+}

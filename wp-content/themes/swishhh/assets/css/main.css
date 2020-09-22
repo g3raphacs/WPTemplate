@@ -1,18 +1,308 @@
-/* Error: The target selector was not found.
- * Use "@extend %txt-main-light !optional" to avoid this error.
- *   ,
- * 6 |     @extend %txt-main-light;
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   wp-content\themes\swishhh\assets\style\modules\_resets.scss 6:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend %txt-main-light !optional" to avoid this error.\a   \2577 \a 6 \2502      @extend %txt-main-light;\d\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   wp-content\\themes\\swishhh\\assets\\style\\modules\\_resets.scss 6:5  root stylesheet';
+#navbar-topbar #navbar-right #search-icon:hover {
+  color: #ff6600;
 }
+
+.txt-main {
+  color: #ff6600;
+}
+
+.bck-main {
+  background-color: #ff6600;
+}
+
+a, body {
+  color: #231f20;
+}
+
+.txt-sec {
+  color: #231f20;
+}
+
+.bck-sec {
+  background-color: #231f20;
+}
+
+.txt-sec-light {
+  color: #5a5a5a;
+}
+
+.bck-sec-light {
+  background-color: #5a5a5a;
+}
+
+.txt-sec-xlight {
+  color: #aaaaaa;
+}
+
+.bck-sec-xlight {
+  background-color: #aaaaaa;
+}
+
+.txt-black {
+  color: #000000;
+}
+
+.bck-black {
+  background-color: #000000;
+}
+
+.txt-white {
+  color: #ffffff;
+}
+
+.bck-white {
+  background-color: #ffffff;
+}
+
+.f-11 {
+  font-size: 0.6875rem;
+}
+
+.f-12 {
+  font-size: 0.75rem;
+}
+
+.f-13 {
+  font-size: 0.8125rem;
+}
+
+.f-14 {
+  font-size: 0.875rem;
+}
+
+.f-15 {
+  font-size: 0.9375rem;
+}
+
+.f-16 {
+  font-size: 1rem;
+}
+
+.f-17 {
+  font-size: 1.0625rem;
+}
+
+.f-18 {
+  font-size: 1.125rem;
+}
+
+.f-20 {
+  font-size: 1.25rem;
+}
+
+.f-21 {
+  font-size: 1.3125rem;
+}
+
+.f-22 {
+  font-size: 1.375rem;
+}
+
+.f-24 {
+  font-size: 1.5rem;
+}
+
+.f-27 {
+  font-size: 1.6875rem;
+}
+
+.f-30 {
+  font-size: 1.875rem;
+}
+
+.f-38 {
+  font-size: 2.375rem;
+}
+
+.f-42 {
+  font-size: 2.625rem;
+}
+
+.f-57 {
+  font-size: 3.5625rem;
+}
+
+.f-regular {
+  font-weight: 400;
+}
+
+.f-bold {
+  font-weight: 700;
+}
+
+.f-black {
+  font-weight: 900;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul, menu {
+  padding-left: 0px;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.m0 {
+  margin: 0px;
+}
+
+.m0child * {
+  margin: 0px;
+}
+
+.p0 {
+  padding: 0px;
+}
+
+.mp0 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.b0 {
+  border: none;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.containerLarge {
+  max-width: 1640px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-spaceb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-align {
+  align-items: center;
+}
+
+#navbar-topbar {
+  max-height: 45px;
+}
+#navbar-topbar #navbar-left {
+  align-items: center;
+  flex: 0, 70%;
+}
+#navbar-topbar #navbar-left #navbar-social div {
+  padding-right: 15px;
+}
+#navbar-topbar #navbar-left #navbar-social div a img:nth-child(1) {
+  display: block;
+}
+#navbar-topbar #navbar-left #navbar-social div a img:nth-child(2) {
+  display: none;
+}
+#navbar-topbar #navbar-left #navbar-social div:hover a img:nth-child(1) {
+  display: none;
+}
+#navbar-topbar #navbar-left #navbar-social div:hover a img:nth-child(2) {
+  display: block;
+}
+#navbar-topbar #navbar-right {
+  align-items: center;
+}
+#navbar-topbar #navbar-right #search-icon {
+  padding: 10px;
+}
+#navbar-topbar #navbar-right #nav-burger.closed #nav-burger-closed {
+  display: block;
+}
+#navbar-topbar #navbar-right #nav-burger.closed #nav-burger-opened {
+  display: none;
+}
+#navbar-topbar #navbar-right #nav-burger.opened #nav-burger-closed {
+  display: none;
+}
+#navbar-topbar #navbar-right #nav-burger.opened #nav-burger-opened {
+  display: block;
+}
+#navbar-topbar #navbar-right #nav-burger #nav-burger-closed img:nth-child(1) {
+  display: block;
+}
+#navbar-topbar #navbar-right #nav-burger #nav-burger-closed img:nth-child(2) {
+  display: none;
+}
+#navbar-topbar #navbar-right #nav-burger #nav-burger-opened img:nth-child(1) {
+  display: block;
+}
+#navbar-topbar #navbar-right #nav-burger #nav-burger-opened img:nth-child(2) {
+  display: none;
+}
+#navbar-topbar #navbar-right #nav-burger:hover #nav-burger-closed img:nth-child(1) {
+  display: none;
+}
+#navbar-topbar #navbar-right #nav-burger:hover #nav-burger-closed img:nth-child(2) {
+  display: block;
+}
+#navbar-topbar #navbar-right #nav-burger:hover #nav-burger-opened img:nth-child(1) {
+  display: none;
+}
+#navbar-topbar #navbar-right #nav-burger:hover #nav-burger-opened img:nth-child(2) {
+  display: block;
+}
+
+/*# sourceMappingURL=main.css.map */
