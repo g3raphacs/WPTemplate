@@ -305,4 +305,11 @@ button {
   display: block;
 }
 
+#navbar-bottombar {
+  background-color: red;
+}
+#navbar-bottombar #menu {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

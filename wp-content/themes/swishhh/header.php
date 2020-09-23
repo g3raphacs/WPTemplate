@@ -9,7 +9,7 @@
 
 <body>
     <!-- navbar  -->
-    <div id="navbar-topbar" class="flex-spaceb bck-sec mp0">
+    <div id="navbar-topbar" class="flex-spaceb bck-sec">
         <div id="navbar-left" class="flex">
             <!-- logo -->
             <div id="logo"><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/swishhh1.svg" alt="Swishhh Logo" width="312.243px" height="45px"></a></div>
@@ -47,6 +47,14 @@
             </div>
         </div>
     </div>
+    <div id="navbar-bottombar" class="flex-spaceb bck-white">
+        <?php wp_nav_menu([
+                'theme_location' => 'header',
+                'container' => false,
+                'menu_class' => 'flex-spaceb container',
+                'menu_id' => 'menu',
+        ]); ?>
+    </div>
 
     <!-- navbar test -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -57,11 +65,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <?php wp_nav_menu([
-                'theme_location' => 'header',
-                'container' => false,
-                'menu_class' => 'navbar-nav mr-auto',
-            ]); ?>
+
 
             <?php get_search_form(); ?>
 
